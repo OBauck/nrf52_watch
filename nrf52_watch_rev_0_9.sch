@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -291,7 +291,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-6.75" y1="9" x2="-6.75" y2="-9" width="0.15" layer="21"/>
 <text x="0" y="7.8" size="1.27" layer="21" font="vector" align="center">Antenna</text>
 </package>
-<package name="SOIC127P790X216-8N" library_version="6" library_locally_modified="yes">
+<package name="SOIC127P790X216-8N" urn="urn:adsk.eagle:footprint:5921571/1" library_version="7" library_locally_modified="yes">
 <description>&lt;b&gt;8-SOP (200MIL)&lt;/b&gt;&lt;br&gt;
 </description>
 <smd name="1" x="-3.6" y="1.905" dx="1.65" dy="0.7" layer="1"/>
@@ -318,7 +318,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-2.425" y1="-2.615" x2="-2.425" y2="2.615" width="0.2" layer="21"/>
 <wire x1="-4.425" y1="2.605" x2="-2.775" y2="2.605" width="0.2" layer="21"/>
 </package>
-<package name="SON40P200X200X100-10N" urn="urn:adsk.eagle:footprint:5825595/1" locally_modified="yes" library_version="6" library_locally_modified="yes">
+<package name="SON40P200X200X100-10N" urn="urn:adsk.eagle:footprint:5825595/2" library_version="7" library_locally_modified="yes">
 <description>&lt;b&gt;DFN-COL 2X2X0.95&lt;/b&gt;&lt;br&gt;
 </description>
 <smd name="1" x="-0.95" y="0.8" dx="0.85" dy="0.2" layer="1"/>
@@ -349,16 +349,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 <packages3d>
-<package3d name="HOLYIOT_18010_REDUCED" urn="urn:adsk.eagle:package:5825596/1" type="box" library_version="6" library_locally_modified="yes">
+<package3d name="HOLYIOT_18010_REDUCED" urn="urn:adsk.eagle:package:5825596/2" type="box" library_version="7" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="HOLYIOT_18010_REDUCED"/>
 </packageinstances>
 </package3d>
-<package3d name="SON40P200X200X100-10N" urn="urn:adsk.eagle:package:5825597/1" locally_modified="yes" type="box" library_version="6" library_locally_modified="yes">
-<description>&lt;b&gt;DFN-COL 2X2X0.95&lt;/b&gt;&lt;br&gt;
-</description>
+<package3d name="SON40P200X200X100-10N" urn="urn:adsk.eagle:package:5825597/3" type="model" library_version="7" library_locally_modified="yes">
+<description>&lt;b&gt;DFN-COL 2X2X0.95&lt;/b&gt;&lt;br&gt;</description>
 <packageinstances>
 <packageinstance name="SON40P200X200X100-10N"/>
+</packageinstances>
+</package3d>
+<package3d name="SOIC127P790X216-8N" urn="urn:adsk.eagle:package:5921572/2" type="model" library_version="7" library_locally_modified="yes">
+<description>&lt;b&gt;8-SOP (200MIL)&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="SOIC127P790X216-8N"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -407,7 +412,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="P1.10" x="22.86" y="-25.4" length="middle" rot="R180"/>
 <pin name="GND3" x="22.86" y="-27.94" length="middle" rot="R180"/>
 </symbol>
-<symbol name="MX25R6435FM2IL0" library_version="6" library_locally_modified="yes">
+<symbol name="MX25R6435FM2IL0" urn="urn:adsk.eagle:symbol:5921570/1" library_version="7" library_locally_modified="yes">
 <wire x1="5.08" y1="2.54" x2="35.56" y2="2.54" width="0.254" layer="94"/>
 <wire x1="35.56" y1="-10.16" x2="35.56" y2="2.54" width="0.254" layer="94"/>
 <wire x1="35.56" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
@@ -443,7 +448,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="HOLYIOT_18010" urn="urn:adsk.eagle:component:5825598/1" prefix="IC" library_version="6" library_locally_modified="yes">
+<deviceset name="HOLYIOT_18010" urn="urn:adsk.eagle:component:5825598/1" locally_modified="yes" prefix="IC" library_version="7" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="HOLYIOT_18010_REDUCED" x="0" y="2.54"/>
 </gates>
@@ -489,7 +494,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="VDD_NRF" pad="14"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:5825596/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5825596/2"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -500,7 +505,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
-<deviceset name="MX25R6435FM2IL0" prefix="IC" library_version="6" library_locally_modified="yes">
+<deviceset name="MX25R6435FM2IL0" urn="urn:adsk.eagle:component:5921574/1" locally_modified="yes" prefix="IC" library_version="7" library_locally_modified="yes">
 <description>&lt;b&gt;MX25R6435FM2IL0, Serial NOR Flash Memory, 16 x 4 bit, 32M x 2 bit, 64M x 1 bit 64Mbit, 1.7  3.6 V, 16, 8-Pin&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="http://www.macronix.com/Lists/Datasheet/Attachments/6746/MX25R6435F, Wide Range, 64Mb, v1.4.pdf"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -518,6 +523,9 @@ Source: &lt;a href="http://www.macronix.com/Lists/Datasheet/Attachments/6746/MX2
 <connect gate="G$1" pin="VCC" pad="8"/>
 <connect gate="G$1" pin="WP#SIO2" pad="3"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5921572/2"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="ARROW_PART_NUMBER" value="MX25R6435FM2IL0" constant="no"/>
@@ -533,7 +541,7 @@ Source: &lt;a href="http://www.macronix.com/Lists/Datasheet/Attachments/6746/MX2
 </device>
 </devices>
 </deviceset>
-<deviceset name="MMA8652FCR1" urn="urn:adsk.eagle:component:5825599/1" locally_modified="yes" prefix="IC" library_version="6" library_locally_modified="yes">
+<deviceset name="MMA8652FCR1" urn="urn:adsk.eagle:component:5825599/2" locally_modified="yes" prefix="IC" library_version="7" library_locally_modified="yes">
 <description>&lt;b&gt;NXP MMA8652FCR1, 3-Axis Accelerometer, 2 g, 4 g, 8 g, 1.95  3.6 V, Serial-I2C, DFN 10-Pin&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="https://cache.freescale.com/files/sensors/doc/data_sheet/MMA8652FC.pdf"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -554,7 +562,7 @@ Source: &lt;a href="https://cache.freescale.com/files/sensors/doc/data_sheet/MMA
 <connect gate="G$1" pin="VDDIO" pad="8"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:5825597/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5825597/3"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -683,19 +691,7 @@ Source: &lt;a href="https://cache.freescale.com/files/sensors/doc/data_sheet/MMA
 <wire x1="10.6" y1="0" x2="3.4" y2="-10" width="0.2" layer="21" curve="-71.221967"/>
 <wire x1="10.6" y1="0" x2="3.5" y2="10" width="0.2" layer="21" curve="70.709954"/>
 </package>
-<package name="BK-5067" library_version="3" library_locally_modified="yes">
-<smd name="N" x="0" y="0" dx="14" dy="14" layer="1"/>
-<smd name="P1" x="-12.33" y="0" dx="6.07" dy="6.07" layer="1"/>
-<smd name="P2" x="12.33" y="0" dx="6.07" dy="6.07" layer="1"/>
-<circle x="0" y="-1.5" radius="10" width="0.1" layer="51"/>
-<wire x1="-10.555" y1="7.76" x2="-10.555" y2="-6" width="0.1" layer="21"/>
-<wire x1="-10.555" y1="-6" x2="-4" y2="-12.05" width="0.1" layer="21"/>
-<wire x1="-4" y1="-12.05" x2="4" y2="-12.05" width="0.1" layer="21"/>
-<wire x1="4" y1="-12.05" x2="10.555" y2="-6" width="0.1" layer="21"/>
-<wire x1="10.555" y1="-6" x2="10.555" y2="7.76" width="0.1" layer="21"/>
-<wire x1="10.555" y1="7.76" x2="-10.555" y2="7.76" width="0.1" layer="21"/>
-</package>
-<package name="BK-916-TR" library_version="3" library_locally_modified="yes">
+<package name="BK-916-TR" urn="urn:adsk.eagle:footprint:5921566/1" library_version="4" library_locally_modified="yes">
 <description>&lt;b&gt;BK-916-TR&lt;/b&gt;&lt;br&gt;
 </description>
 <smd name="N" x="0" y="0" dx="10.2" dy="10.2" layer="1" roundness="100" thermals="no"/>
@@ -719,6 +715,18 @@ Source: &lt;a href="https://cache.freescale.com/files/sensors/doc/data_sheet/MMA
 <wire x1="-4.75" y1="4.55" x2="-2.7" y2="4.55" width="0.2" layer="21"/>
 <wire x1="4.75" y1="4.55" x2="2.7" y2="4.55" width="0.2" layer="21"/>
 <circle x="0" y="0" radius="6" width="0.1" layer="51"/>
+</package>
+<package name="BK-5067" urn="urn:adsk.eagle:footprint:5921565/1" library_version="4" library_locally_modified="yes">
+<smd name="N" x="0" y="0" dx="14" dy="14" layer="1"/>
+<smd name="P1" x="-12.33" y="0" dx="6.07" dy="6.07" layer="1"/>
+<smd name="P2" x="12.33" y="0" dx="6.07" dy="6.07" layer="1"/>
+<circle x="0" y="-1.5" radius="10" width="0.1" layer="51"/>
+<wire x1="-10.555" y1="7.76" x2="-10.555" y2="-6" width="0.1" layer="21"/>
+<wire x1="-10.555" y1="-6" x2="-4" y2="-12.05" width="0.1" layer="21"/>
+<wire x1="-4" y1="-12.05" x2="4" y2="-12.05" width="0.1" layer="21"/>
+<wire x1="4" y1="-12.05" x2="10.555" y2="-6" width="0.1" layer="21"/>
+<wire x1="10.555" y1="-6" x2="10.555" y2="7.76" width="0.1" layer="21"/>
+<wire x1="10.555" y1="7.76" x2="-10.555" y2="7.76" width="0.1" layer="21"/>
 </package>
 </packages>
 <packages3d>
@@ -755,6 +763,17 @@ Source: &lt;a href="https://cache.freescale.com/files/sensors/doc/data_sheet/MMA
 <packageinstance name="BU2032SM-HD-G"/>
 </packageinstances>
 </package3d>
+<package3d name="BK-916-TR" urn="urn:adsk.eagle:package:5921568/3" type="model" library_version="4" library_locally_modified="yes">
+<description>&lt;b&gt;BK-916-TR&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="BK-916-TR"/>
+</packageinstances>
+</package3d>
+<package3d name="BK-5067" urn="urn:adsk.eagle:package:5921567/1" type="box" library_version="4" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="BK-5067"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="BATTERY" urn="urn:adsk.eagle:symbol:3667034/2" library_version="3" library_locally_modified="yes">
@@ -768,7 +787,7 @@ Source: &lt;a href="https://cache.freescale.com/files/sensors/doc/data_sheet/MMA
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BATTERY" urn="urn:adsk.eagle:component:3667127/3" locally_modified="yes" prefix="B" library_version="3" library_locally_modified="yes">
+<deviceset name="BATTERY" urn="urn:adsk.eagle:component:3667127/4" locally_modified="yes" prefix="B" library_version="4" library_locally_modified="yes">
 <description>596: https://www.digikey.com/product-detail/en/keystone-electronics/596/36-596-ND/2137852
 590: https://www.digikey.com/product-detail/en/keystone-electronics/590/36-590-ND/2137886
 
@@ -866,6 +885,9 @@ Source: &lt;a href="https://cache.freescale.com/files/sensors/doc/data_sheet/MMA
 <connect gate="G$1" pin="+" pad="P1 P2"/>
 <connect gate="G$1" pin="-" pad="N"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5921567/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MANUFACTURER_NAME" value="MPD" constant="no"/>
@@ -878,6 +900,9 @@ Source: &lt;a href="https://cache.freescale.com/files/sensors/doc/data_sheet/MMA
 <connect gate="G$1" pin="+" pad="P1 P2"/>
 <connect gate="G$1" pin="-" pad="N"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5921568/3"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MANUFACTURER_NAME" value="MPD" constant="no"/>
@@ -891,7 +916,7 @@ Source: &lt;a href="https://cache.freescale.com/files/sensors/doc/data_sheet/MMA
 </library>
 <library name="Inventas-Connectors" urn="urn:adsk.eagle:library:3667136">
 <packages>
-<package name="0528921033" library_version="4" library_locally_modified="yes">
+<package name="0528921033" urn="urn:adsk.eagle:footprint:5921580/1" library_version="5" library_locally_modified="yes">
 <description>&lt;b&gt;0528921033&lt;/b&gt;&lt;br&gt;
 </description>
 <smd name="1" x="-2.25" y="2.075" dx="1.4" dy="0.3" layer="1" rot="R90"/>
@@ -923,7 +948,7 @@ Source: &lt;a href="https://cache.freescale.com/files/sensors/doc/data_sheet/MMA
 <wire x1="-4.8" y1="-2.775" x2="4.8" y2="-2.775" width="0.1" layer="21"/>
 <wire x1="4.8" y1="-2.775" x2="4.8" y2="-2.375" width="0.1" layer="21"/>
 </package>
-<package name="1X06_1.27MM" urn="urn:adsk.eagle:footprint:3667176/1" locally_modified="yes" library_version="4" library_locally_modified="yes">
+<package name="1X06_1.27MM" urn="urn:adsk.eagle:footprint:3667176/2" library_version="5" library_locally_modified="yes">
 <description>&lt;h3&gt;Plated Through Hole - 6 Pin&lt;/h3&gt;
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:6&lt;/li&gt;
@@ -952,6 +977,7 @@ Source: &lt;a href="https://cache.freescale.com/files/sensors/doc/data_sheet/MMA
 <wire x1="2.921" y1="2.159" x2="3.429" y2="1.651" width="0.127" layer="21"/>
 <wire x1="3.429" y1="1.651" x2="3.429" y2="-0.381" width="0.127" layer="21"/>
 <wire x1="3.429" y1="-0.381" x2="2.921" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="1.905" y1="1.905" x2="1.651" y2="2.159" width="0.127" layer="21"/>
 <pad name="5" x="2.54" y="0" drill="0.508" diameter="1" stop="no"/>
 <pad name="4" x="1.27" y="1.27" drill="0.508" diameter="1" stop="no"/>
 <pad name="3" x="1.27" y="0" drill="0.508" diameter="1" stop="no"/>
@@ -964,14 +990,13 @@ Source: &lt;a href="https://cache.freescale.com/files/sensors/doc/data_sheet/MMA
 <circle x="0" y="0" radius="0.6" width="0" layer="29"/>
 <circle x="2.54" y="0" radius="0.6" width="0" layer="29"/>
 <circle x="2.54" y="1.27" radius="0.6" width="0" layer="29"/>
-<wire x1="1.905" y1="1.905" x2="1.651" y2="2.159" width="0.127" layer="21"/>
 <circle x="1.27" y="1.27" radius="0.6" width="0" layer="29"/>
 <circle x="1.27" y="1.27" radius="0.6" width="0" layer="29"/>
 <circle x="0" y="1.27" radius="0.6" width="0" layer="29"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="1X06_1.27MM" urn="urn:adsk.eagle:package:3667244/1" locally_modified="yes" type="box" library_version="4" library_locally_modified="yes">
+<package3d name="1X06_1.27MM" urn="urn:adsk.eagle:package:3667244/3" type="box" library_version="5" library_locally_modified="yes">
 <description>&lt;h3&gt;Plated Through Hole - 6 Pin&lt;/h3&gt;
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:6&lt;/li&gt;
@@ -982,6 +1007,12 @@ Source: &lt;a href="https://cache.freescale.com/files/sensors/doc/data_sheet/MMA
 &lt;/ul&gt;&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="1X06_1.27MM"/>
+</packageinstances>
+</package3d>
+<package3d name="0528921033" urn="urn:adsk.eagle:package:5921583/2" type="model" library_version="5" library_locally_modified="yes">
+<description>&lt;b&gt;0528921033&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="0528921033"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1031,7 +1062,7 @@ Source: &lt;a href="https://cache.freescale.com/files/sensors/doc/data_sheet/MMA
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="0528921033" prefix="J" library_version="4" library_locally_modified="yes">
+<deviceset name="0528921033" urn="urn:adsk.eagle:component:5921586/1" locally_modified="yes" prefix="J" library_version="5" library_locally_modified="yes">
 <description>&lt;b&gt;FFC &amp; FPC Connectors 0.5 FFC/FPC ZIF Hsg Assy 10Ckt EmbsTpPkg&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="https://www.molex.com/webdocs/datasheets/pdf/en-us/0528921033_FFC_FPC_CONNECTORS.pdf"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -1051,6 +1082,9 @@ Source: &lt;a href="https://www.molex.com/webdocs/datasheets/pdf/en-us/052892103
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5921583/2"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="ARROW_PART_NUMBER" value="0528921033" constant="no"/>
@@ -1066,7 +1100,7 @@ Source: &lt;a href="https://www.molex.com/webdocs/datasheets/pdf/en-us/052892103
 </device>
 </devices>
 </deviceset>
-<deviceset name="SWD_PROG_POGO" urn="urn:adsk.eagle:component:3667311/1" locally_modified="yes" library_version="4" library_locally_modified="yes">
+<deviceset name="SWD_PROG_POGO" urn="urn:adsk.eagle:component:3667311/2" locally_modified="yes" library_version="5" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="TC2030" x="0" y="0"/>
 </gates>
@@ -1081,7 +1115,7 @@ Source: &lt;a href="https://www.molex.com/webdocs/datasheets/pdf/en-us/052892103
 <connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:3667244/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:3667244/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -1093,7 +1127,7 @@ Source: &lt;a href="https://www.molex.com/webdocs/datasheets/pdf/en-us/052892103
 </library>
 <library name="Inventas-Buttons" urn="urn:adsk.eagle:library:3296773">
 <packages>
-<package name="EVQP7C01P" library_version="3" library_locally_modified="yes">
+<package name="EVQP7C01P" urn="urn:adsk.eagle:footprint:5921588/1" library_version="4" library_locally_modified="yes">
 <description>&lt;b&gt;EVQ-P7C01P&lt;/b&gt;&lt;br&gt;
 </description>
 <smd name="1" x="-1.8" y="0.725" dx="1.4" dy="1.05" layer="1"/>
@@ -1120,6 +1154,15 @@ Source: &lt;a href="https://www.molex.com/webdocs/datasheets/pdf/en-us/052892103
 <wire x1="-2.9" y1="0.7" x2="-2.9" y2="0.9" width="0.2" layer="21" curve="-180"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="EVQP7C01P" urn="urn:adsk.eagle:package:5921590/2" type="model" library_version="4" library_locally_modified="yes">
+<description>&lt;b&gt;EVQ-P7C01P&lt;/b&gt;&lt;br&gt;
+</description>
+<packageinstances>
+<packageinstance name="EVQP7C01P"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
 <symbol name="SWITCH-MOMENTARY-2" urn="urn:adsk.eagle:symbol:3296788/1" library_version="3" library_locally_modified="yes">
 <description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST&lt;/h3&gt;
@@ -1135,7 +1178,7 @@ Source: &lt;a href="https://www.molex.com/webdocs/datasheets/pdf/en-us/052892103
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="EVQ-P7C01P" prefix="S" library_version="3" library_locally_modified="yes">
+<deviceset name="EVQ-P7C01P" urn="urn:adsk.eagle:component:5921591/1" locally_modified="yes" prefix="S" library_version="4" library_locally_modified="yes">
 <description>&lt;b&gt;Black Side Tactile Switch, SPST 50 mA@ 12 V dc 1.7mm&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="https://www.arrow.com/en/products/evqp7c01p/panasonic"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -1147,6 +1190,9 @@ Source: &lt;a href="https://www.arrow.com/en/products/evqp7c01p/panasonic"&gt; D
 <connect gate="G$1" pin="1" pad="2 3"/>
 <connect gate="G$1" pin="2" pad="1 4"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5921590/2"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="ARROW_PART_NUMBER" value="EVQ-P7C01P" constant="no"/>
@@ -1798,13 +1844,13 @@ Source: &lt;a href="https://www.arrow.com/en/products/evqp7c01p/panasonic"&gt; D
 </package>
 </packages>
 <packages3d>
-<package3d name="SOT-25" urn="urn:adsk.eagle:package:3131091/1" type="box" library_version="4">
+<package3d name="SOT-25" urn="urn:adsk.eagle:package:3131091/2" type="model" library_version="4" library_locally_modified="yes">
 <description>&lt;b&gt;SOT-25&lt;/b&gt;&lt;br&gt;</description>
 <packageinstances>
 <packageinstance name="SOT-25"/>
 </packageinstances>
 </package3d>
-<package3d name="SOT23-3" urn="urn:adsk.eagle:package:5815204/1" type="box" library_version="4">
+<package3d name="SOT23-3" urn="urn:adsk.eagle:package:5815204/2" type="model" library_version="4" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="SOT23-3"/>
 </packageinstances>
@@ -1837,7 +1883,7 @@ Source: &lt;a href="https://www.arrow.com/en/products/evqp7c01p/panasonic"&gt; D
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TCK106AF" urn="urn:adsk.eagle:component:3131121/1" prefix="S" library_version="4">
+<deviceset name="TCK106AF" urn="urn:adsk.eagle:component:3131121/1" locally_modified="yes" prefix="S" library_version="4" library_locally_modified="yes">
 <description>&lt;b&gt;iC POWER DIST LOAD SWITCH SMV&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=53240&amp;prodName=TCK108AF"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -1853,7 +1899,7 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=5324
 <connect gate="G$1" pin="VOUT" pad="1"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:3131091/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:3131091/2"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -1871,7 +1917,7 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=5324
 </device>
 </devices>
 </deviceset>
-<deviceset name="ISL60002" urn="urn:adsk.eagle:component:5815205/1" library_version="4">
+<deviceset name="ISL60002" urn="urn:adsk.eagle:component:5815205/1" locally_modified="yes" library_version="4" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="ISL60002" x="0" y="0"/>
 </gates>
@@ -1883,7 +1929,7 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=5324
 <connect gate="G$1" pin="VOUT" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:5815204/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5815204/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -1966,13 +2012,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="FRAME-A4L" device=""/>
-<part name="IC1" library="Inventas-IC" library_urn="urn:adsk.eagle:library:3137148" deviceset="HOLYIOT_18010" device="" package3d_urn="urn:adsk.eagle:package:5825596/1"/>
-<part name="IC2" library="Inventas-IC" library_urn="urn:adsk.eagle:library:3137148" deviceset="MX25R6435FM2IL0" device=""/>
-<part name="B2" library="Inventas-Misc" library_urn="urn:adsk.eagle:library:3667010" deviceset="BATTERY" device="-BK-916" value="BATTERY-BK-916"/>
-<part name="J1" library="Inventas-Connectors" library_urn="urn:adsk.eagle:library:3667136" deviceset="0528921033" device=""/>
-<part name="S1" library="Inventas-Buttons" library_urn="urn:adsk.eagle:library:3296773" deviceset="EVQ-P7C01P" device=""/>
-<part name="S2" library="Inventas-Buttons" library_urn="urn:adsk.eagle:library:3296773" deviceset="EVQ-P7C01P" device=""/>
-<part name="S3" library="Inventas-Buttons" library_urn="urn:adsk.eagle:library:3296773" deviceset="EVQ-P7C01P" device=""/>
+<part name="IC1" library="Inventas-IC" library_urn="urn:adsk.eagle:library:3137148" deviceset="HOLYIOT_18010" device="" package3d_urn="urn:adsk.eagle:package:5825596/2"/>
+<part name="IC2" library="Inventas-IC" library_urn="urn:adsk.eagle:library:3137148" deviceset="MX25R6435FM2IL0" device="" package3d_urn="urn:adsk.eagle:package:5921572/2"/>
+<part name="B2" library="Inventas-Misc" library_urn="urn:adsk.eagle:library:3667010" deviceset="BATTERY" device="-BK-916" package3d_urn="urn:adsk.eagle:package:5921568/3" value="BATTERY-BK-916"/>
+<part name="J1" library="Inventas-Connectors" library_urn="urn:adsk.eagle:library:3667136" deviceset="0528921033" device="" package3d_urn="urn:adsk.eagle:package:5921583/2"/>
+<part name="S1" library="Inventas-Buttons" library_urn="urn:adsk.eagle:library:3296773" deviceset="EVQ-P7C01P" device="" package3d_urn="urn:adsk.eagle:package:5921590/2"/>
+<part name="S2" library="Inventas-Buttons" library_urn="urn:adsk.eagle:library:3296773" deviceset="EVQ-P7C01P" device="" package3d_urn="urn:adsk.eagle:package:5921590/2"/>
+<part name="S3" library="Inventas-Buttons" library_urn="urn:adsk.eagle:library:3296773" deviceset="EVQ-P7C01P" device="" package3d_urn="urn:adsk.eagle:package:5921590/2"/>
 <part name="GND1" library="Inventas-PowerSymbols" library_urn="urn:adsk.eagle:library:5553297" deviceset="GND" device=""/>
 <part name="C1" library="Inventas-Passives" library_urn="urn:adsk.eagle:library:3125287" deviceset="CAP-6.3V-20%" device="-0402" package3d_urn="urn:adsk.eagle:package:3125639/2" value="1uF"/>
 <part name="C2" library="Inventas-Passives" library_urn="urn:adsk.eagle:library:3125287" deviceset="CAP-6.3V-20%" device="-0402" package3d_urn="urn:adsk.eagle:package:3125639/2" value="1uF"/>
@@ -1990,7 +2036,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C4" library="Inventas-Passives" library_urn="urn:adsk.eagle:library:3125287" deviceset="CAP-6.3V-20%" device="-0402" package3d_urn="urn:adsk.eagle:package:3125639/2" value="0.1uF"/>
 <part name="GND7" library="Inventas-PowerSymbols" library_urn="urn:adsk.eagle:library:5553297" deviceset="GND" device=""/>
 <part name="GND8" library="Inventas-PowerSymbols" library_urn="urn:adsk.eagle:library:5553297" deviceset="GND" device=""/>
-<part name="S4" library="Inventas-Power" library_urn="urn:adsk.eagle:library:3131026" deviceset="TCK106AF" device="" package3d_urn="urn:adsk.eagle:package:3131091/1"/>
+<part name="S4" library="Inventas-Power" library_urn="urn:adsk.eagle:library:3131026" deviceset="TCK106AF" device="" package3d_urn="urn:adsk.eagle:package:3131091/2"/>
 <part name="SUPPLY5" library="Inventas-PowerSymbols" library_urn="urn:adsk.eagle:library:5553297" deviceset="VDD" device=""/>
 <part name="GND11" library="Inventas-PowerSymbols" library_urn="urn:adsk.eagle:library:5553297" deviceset="GND" device=""/>
 <part name="C7" library="Inventas-Passives" library_urn="urn:adsk.eagle:library:3125287" deviceset="CAP-6.3V-20%" device="-0402" package3d_urn="urn:adsk.eagle:package:3125639/2" value="0.1uF"/>
@@ -2000,11 +2046,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY9" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDD" device=""/>
 <part name="GND14" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="GND15" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="IC4" library="Inventas-IC" library_urn="urn:adsk.eagle:library:3137148" deviceset="MMA8652FCR1" device="" package3d_urn="urn:adsk.eagle:package:5825597/1"/>
+<part name="IC4" library="Inventas-IC" library_urn="urn:adsk.eagle:library:3137148" deviceset="MMA8652FCR1" device="" package3d_urn="urn:adsk.eagle:package:5825597/3"/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDD" device=""/>
 <part name="C9" library="Inventas-Passives" library_urn="urn:adsk.eagle:library:3125287" deviceset="CAP-6.3V-20%" device="-0402" package3d_urn="urn:adsk.eagle:package:3125639/2" value="0.1uF"/>
 <part name="C10" library="Inventas-Passives" library_urn="urn:adsk.eagle:library:3125287" deviceset="CAP-6.3V-20%" device="-0402" package3d_urn="urn:adsk.eagle:package:3125639/2" value="1uF"/>
-<part name="IC5" library="Inventas-Power" library_urn="urn:adsk.eagle:library:3131026" deviceset="ISL60002" device="" package3d_urn="urn:adsk.eagle:package:5815204/1"/>
+<part name="IC5" library="Inventas-Power" library_urn="urn:adsk.eagle:library:3131026" deviceset="ISL60002" device="" package3d_urn="urn:adsk.eagle:package:5815204/2"/>
 <part name="SUPPLY3" library="Inventas-PowerSymbols" library_urn="urn:adsk.eagle:library:5553297" deviceset="VDD" device=""/>
 <part name="GND9" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="C5" library="Inventas-Passives" library_urn="urn:adsk.eagle:library:3125287" deviceset="CAP-6.3V-20%" device="-0402" package3d_urn="urn:adsk.eagle:package:3125639/2" value="1uF"/>
@@ -2013,7 +2059,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND13" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="GND12" library="Inventas-PowerSymbols" library_urn="urn:adsk.eagle:library:5553297" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="Inventas-PowerSymbols" library_urn="urn:adsk.eagle:library:5553297" deviceset="VDD" device=""/>
-<part name="PRG" library="Inventas-Connectors" library_urn="urn:adsk.eagle:library:3667136" deviceset="SWD_PROG_POGO" device="" package3d_urn="urn:adsk.eagle:package:3667244/1" value="NO_BOM"/>
+<part name="PRG" library="Inventas-Connectors" library_urn="urn:adsk.eagle:library:3667136" deviceset="SWD_PROG_POGO" device="" package3d_urn="urn:adsk.eagle:package:3667244/3" value="NO_BOM"/>
 <part name="R7" library="Inventas-Passives" library_urn="urn:adsk.eagle:library:3125287" deviceset="RES-0.063W-1%-" device="0402" package3d_urn="urn:adsk.eagle:package:3125390/3" value="4M"/>
 <part name="R8" library="Inventas-Passives" library_urn="urn:adsk.eagle:library:3125287" deviceset="RES-0.063W-1%-" device="0402" package3d_urn="urn:adsk.eagle:package:3125390/3" value="10M"/>
 <part name="C6" library="Inventas-Passives" library_urn="urn:adsk.eagle:library:3125287" deviceset="CAP-6.3V-20%" device="-0402" package3d_urn="urn:adsk.eagle:package:3125639/2" value="10nF"/>
@@ -2025,62 +2071,194 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="212.344" y="70.612" size="2.032" layer="97">i2c address: 0x1C</text>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="IC1" gate="G$1" x="129.54" y="137.16"/>
-<instance part="IC2" gate="G$1" x="195.58" y="144.78"/>
-<instance part="B2" gate="G$1" x="111.76" y="25.4"/>
-<instance part="J1" gate="G$1" x="22.86" y="33.02" rot="MR180"/>
-<instance part="S1" gate="G$1" x="45.72" y="165.1"/>
-<instance part="S2" gate="G$1" x="45.72" y="152.4"/>
-<instance part="S3" gate="G$1" x="45.72" y="139.7"/>
-<instance part="GND1" gate="1" x="71.12" y="15.24"/>
-<instance part="C1" gate="G$1" x="71.12" y="25.4"/>
-<instance part="C2" gate="G$1" x="78.74" y="25.4"/>
-<instance part="C3" gate="G$1" x="60.96" y="25.4"/>
-<instance part="GND2" gate="1" x="40.64" y="12.7"/>
-<instance part="R1" gate="G$1" x="60.96" y="48.26" rot="R90"/>
-<instance part="R2" gate="G$1" x="45.72" y="25.4" rot="R90"/>
-<instance part="R3" gate="G$1" x="53.34" y="25.4" rot="R90"/>
-<instance part="GND3" gate="1" x="33.02" y="129.54"/>
-<instance part="GND4" gate="1" x="101.6" y="104.14"/>
-<instance part="GND5" gate="1" x="154.94" y="101.6"/>
-<instance part="GND6" gate="1" x="83.82" y="132.08"/>
-<instance part="SUPPLY1" gate="VDD" x="170.18" y="157.48"/>
-<instance part="SUPPLY2" gate="VDD" x="238.76" y="162.56"/>
-<instance part="C4" gate="G$1" x="246.38" y="154.94"/>
-<instance part="GND7" gate="1" x="190.5" y="132.08"/>
-<instance part="GND8" gate="1" x="246.38" y="147.32"/>
-<instance part="S4" gate="G$1" x="58.42" y="81.28" rot="MR0"/>
-<instance part="SUPPLY5" gate="VDD" x="20.32" y="83.82"/>
-<instance part="GND11" gate="1" x="63.5" y="68.58"/>
-<instance part="C7" gate="G$1" x="193.04" y="71.12"/>
-<instance part="C8" gate="G$1" x="246.38" y="78.74"/>
-<instance part="R4" gate="G$1" x="238.76" y="99.06" rot="R90"/>
-<instance part="R5" gate="G$1" x="203.2" y="99.06" rot="R90"/>
-<instance part="SUPPLY9" gate="VDD" x="198.12" y="109.22"/>
-<instance part="GND14" gate="1" x="241.3" y="68.58"/>
-<instance part="GND15" gate="1" x="193.04" y="60.96"/>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="181.61" y="11.43" size="2.54" layer="94" font="vector"/>
+<attribute name="LAST_DATE_TIME" x="181.61" y="6.35" size="2.286" layer="94" font="vector"/>
+<attribute name="SHEET" x="195.58" y="1.27" size="2.54" layer="94" font="vector"/>
+</instance>
+<instance part="IC1" gate="G$1" x="129.54" y="137.16" smashed="yes">
+<attribute name="NAME" x="128.27" y="165.1" size="1.778" layer="95" align="center"/>
+</instance>
+<instance part="IC2" gate="G$1" x="195.58" y="144.78" smashed="yes">
+<attribute name="NAME" x="232.41" y="152.4" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="232.41" y="149.86" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="B2" gate="G$1" x="111.76" y="25.4" smashed="yes">
+<attribute name="NAME" x="106.68" y="29.718" size="1.778" layer="95" font="vector" align="bottom-center"/>
+</instance>
+<instance part="J1" gate="G$1" x="22.86" y="33.02" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="22.86" y="55.626" size="1.778" layer="96" font="vector" rot="MR180"/>
+<attribute name="NAME" x="22.86" y="24.892" size="1.778" layer="95" font="vector" rot="MR180"/>
+</instance>
+<instance part="S1" gate="G$1" x="45.72" y="165.1" smashed="yes">
+<attribute name="NAME" x="45.72" y="166.624" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="45.72" y="164.592" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="S2" gate="G$1" x="45.72" y="152.4" smashed="yes">
+<attribute name="NAME" x="45.72" y="153.924" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="45.72" y="151.892" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="S3" gate="G$1" x="45.72" y="139.7" smashed="yes">
+<attribute name="NAME" x="45.72" y="141.224" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="45.72" y="139.192" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="GND1" gate="1" x="71.12" y="15.24" smashed="yes">
+<attribute name="VALUE" x="71.12" y="14.986" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="C1" gate="G$1" x="71.12" y="25.4" smashed="yes">
+<attribute name="NAME" x="72.644" y="28.321" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="72.644" y="23.241" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C2" gate="G$1" x="78.74" y="25.4" smashed="yes">
+<attribute name="NAME" x="80.264" y="28.321" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="80.264" y="23.241" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C3" gate="G$1" x="60.96" y="25.4" smashed="yes">
+<attribute name="NAME" x="62.484" y="28.321" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="62.484" y="23.241" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="GND2" gate="1" x="40.64" y="12.7" smashed="yes">
+<attribute name="VALUE" x="40.64" y="12.446" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="R1" gate="G$1" x="60.96" y="48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="59.436" y="48.26" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="62.484" y="48.26" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R2" gate="G$1" x="45.72" y="25.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="44.196" y="25.4" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="47.244" y="25.4" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R3" gate="G$1" x="53.34" y="25.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="51.816" y="25.4" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="54.864" y="25.4" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="GND3" gate="1" x="33.02" y="129.54" smashed="yes">
+<attribute name="VALUE" x="33.02" y="129.286" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="GND4" gate="1" x="101.6" y="104.14" smashed="yes">
+<attribute name="VALUE" x="101.6" y="103.886" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="GND5" gate="1" x="154.94" y="101.6" smashed="yes">
+<attribute name="VALUE" x="154.94" y="101.346" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="GND6" gate="1" x="83.82" y="132.08" smashed="yes">
+<attribute name="VALUE" x="83.82" y="131.826" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="SUPPLY1" gate="VDD" x="170.18" y="157.48" smashed="yes">
+<attribute name="VALUE" x="170.18" y="160.274" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY2" gate="VDD" x="238.76" y="162.56" smashed="yes">
+<attribute name="VALUE" x="238.76" y="165.354" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="C4" gate="G$1" x="246.38" y="154.94" smashed="yes">
+<attribute name="NAME" x="247.904" y="157.861" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="247.904" y="152.781" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="GND7" gate="1" x="190.5" y="132.08" smashed="yes">
+<attribute name="VALUE" x="190.5" y="131.826" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="GND8" gate="1" x="246.38" y="147.32" smashed="yes">
+<attribute name="VALUE" x="246.38" y="147.066" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="S4" gate="G$1" x="58.42" y="81.28" smashed="yes" rot="MR0">
+<attribute name="NAME" x="43.18" y="86.36" size="1.778" layer="95" rot="MR0" align="center"/>
+<attribute name="VALUE" x="43.18" y="71.12" size="1.778" layer="96" rot="MR0" align="center"/>
+</instance>
+<instance part="SUPPLY5" gate="VDD" x="20.32" y="83.82" smashed="yes">
+<attribute name="VALUE" x="20.32" y="86.614" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND11" gate="1" x="63.5" y="68.58" smashed="yes">
+<attribute name="VALUE" x="63.5" y="68.326" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="C7" gate="G$1" x="193.04" y="71.12" smashed="yes">
+<attribute name="NAME" x="194.564" y="74.041" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="194.564" y="68.961" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C8" gate="G$1" x="246.38" y="78.74" smashed="yes">
+<attribute name="NAME" x="247.904" y="81.661" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="247.904" y="76.581" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="R4" gate="G$1" x="238.76" y="99.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="237.236" y="99.06" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="240.284" y="99.06" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R5" gate="G$1" x="203.2" y="99.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="201.676" y="99.06" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="204.724" y="99.06" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="SUPPLY9" gate="VDD" x="198.12" y="109.22" smashed="yes">
+<attribute name="VALUE" x="198.12" y="112.014" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND14" gate="1" x="241.3" y="68.58" smashed="yes">
+<attribute name="VALUE" x="241.3" y="68.326" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="GND15" gate="1" x="193.04" y="60.96" smashed="yes">
+<attribute name="VALUE" x="193.04" y="60.706" size="1.778" layer="96" align="top-center"/>
+</instance>
 <instance part="IC4" gate="G$1" x="205.74" y="91.44" smashed="yes">
 <attribute name="NAME" x="217.17" y="96.52" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="212.09" y="76.2" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="SUPPLY6" gate="VDD" x="246.38" y="86.36"/>
-<instance part="C9" gate="G$1" x="203.2" y="71.12"/>
-<instance part="C10" gate="G$1" x="182.88" y="71.12"/>
-<instance part="IC5" gate="G$1" x="144.78" y="33.02"/>
-<instance part="SUPPLY3" gate="VDD" x="167.64" y="40.64"/>
-<instance part="GND9" gate="1" x="162.56" y="20.32"/>
-<instance part="C5" gate="G$1" x="167.64" y="30.48"/>
-<instance part="C11" gate="G$1" x="124.46" y="25.4"/>
-<instance part="GND10" gate="1" x="124.46" y="15.24"/>
-<instance part="GND13" gate="1" x="111.76" y="15.24"/>
-<instance part="GND12" gate="1" x="238.76" y="30.48"/>
-<instance part="SUPPLY4" gate="VDD" x="238.76" y="50.8"/>
-<instance part="PRG" gate="G$1" x="220.98" y="40.64" rot="MR0"/>
-<instance part="R7" gate="G$1" x="106.68" y="63.5" rot="R270"/>
-<instance part="R8" gate="G$1" x="119.38" y="63.5" rot="R90"/>
-<instance part="C6" gate="G$1" x="127" y="63.5"/>
-<instance part="GND16" gate="1" x="119.38" y="50.8"/>
+<instance part="SUPPLY6" gate="VDD" x="246.38" y="86.36" smashed="yes">
+<attribute name="VALUE" x="246.38" y="89.154" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="C9" gate="G$1" x="203.2" y="71.12" smashed="yes">
+<attribute name="NAME" x="204.724" y="74.041" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="204.724" y="68.961" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C10" gate="G$1" x="182.88" y="71.12" smashed="yes">
+<attribute name="NAME" x="184.404" y="74.041" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="184.404" y="68.961" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="IC5" gate="G$1" x="144.78" y="33.02" smashed="yes">
+<attribute name="NAME" x="137.16" y="38.608" size="1.778" layer="95"/>
+<attribute name="VALUE" x="137.16" y="25.4" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY3" gate="VDD" x="167.64" y="40.64" smashed="yes">
+<attribute name="VALUE" x="167.64" y="43.434" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND9" gate="1" x="162.56" y="20.32" smashed="yes">
+<attribute name="VALUE" x="162.56" y="20.066" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="C5" gate="G$1" x="167.64" y="30.48" smashed="yes">
+<attribute name="NAME" x="169.164" y="33.401" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="169.164" y="28.321" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C11" gate="G$1" x="124.46" y="25.4" smashed="yes">
+<attribute name="NAME" x="125.984" y="28.321" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="125.984" y="23.241" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="GND10" gate="1" x="124.46" y="15.24" smashed="yes">
+<attribute name="VALUE" x="124.46" y="14.986" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="GND13" gate="1" x="111.76" y="15.24" smashed="yes">
+<attribute name="VALUE" x="111.76" y="14.986" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="GND12" gate="1" x="238.76" y="30.48" smashed="yes">
+<attribute name="VALUE" x="238.76" y="30.226" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="SUPPLY4" gate="VDD" x="238.76" y="50.8" smashed="yes">
+<attribute name="VALUE" x="238.76" y="53.594" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="PRG" gate="G$1" x="220.98" y="40.64" smashed="yes" rot="MR0">
+<attribute name="NAME" x="228.346" y="51.562" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="228.6" y="27.94" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="R7" gate="G$1" x="106.68" y="63.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="108.204" y="63.5" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="105.156" y="63.5" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
+</instance>
+<instance part="R8" gate="G$1" x="119.38" y="63.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="117.856" y="63.5" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="120.904" y="63.5" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="C6" gate="G$1" x="127" y="63.5" smashed="yes">
+<attribute name="NAME" x="128.524" y="66.421" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="128.524" y="61.341" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="GND16" gate="1" x="119.38" y="50.8" smashed="yes">
+<attribute name="VALUE" x="119.38" y="50.546" size="1.778" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2225,8 +2403,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND2"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="106.68" y1="139.7" x2="83.82" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="139.7" x2="101.6" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="139.7" x2="83.82" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="139.7" x2="83.82" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="VBUS"/>
+<wire x1="106.68" y1="149.86" x2="101.6" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="149.86" x2="101.6" y2="139.7" width="0.1524" layer="91"/>
+<junction x="101.6" y="139.7"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="GND"/>
