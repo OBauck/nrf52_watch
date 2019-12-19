@@ -1,0 +1,24 @@
+"Design title:";"nrf52_watch_rev_0_9"
+"Date:";"03.11.2018 12.11"
+"Designer:";"Ole Bauck"
+"Company:";"Inventas"
+
+"Item";"Qty";"Refdes";"Description";"Value";"MANUFACTURER_PART_NUMBER";"MANUFACTURER_NAME";
+"1";"5";"C3, C4, C7, C8, C9";"CAP-6.3V-20%-0402";"0.1uF";"";"";
+"2";"1";"J1";"0528921033";"0528921033";"0528921033";"Molex";
+"3";"1";"R8";"RES-0.063W-1%-0402";"10M";"";"";
+"4";"3";"R1, R2, R3";"RES-0.063W-5%-0402";"10k";"";"";
+"5";"1";"C6";"CAP-6.3V-20%-0402";"10nF";"";"";
+"6";"2";"R4, R5";"RES-0.063W-5%-0402";"1k";"";"";
+"7";"5";"C1, C2, C5, C10, C11";"CAP-6.3V-20%-0402";"1uF";"";"";
+"8";"1";"R7";"RES-0.063W-1%-0402";"4M";"";"";
+"9";"1";"B2";"BATTERY-BK-916";"BATTERY-BK-916";"BK-916-TR";"MPD";
+"10";"3";"S1, S2, S3";"EVQ-P7C01P";"EVQ-P7C01P";"EVQ-P7C01P";"Panasonic";
+"11";"1";"IC1";"HOLYIOT_18010";"HOLYIOT_18010";"18010";"Holyiot";
+"12";"1";"IC5";"ISL60002";"ISL60002";"";"";
+"13";"1";"IC4";"MMA8652FCR1";"MMA8652FCR1";"MMA8652FCR1";"NXP";
+"14";"1";"IC2";"MX25R6435FM2IL0";"MX25R6435FM2IL0";"MX25R6435FM2IL0";"Macronix";
+"15";"1";"S4";"TCK106AF";"TCK106AF";"TCK106AF";"Toshiba";
+
+"The following components shall not be mounted"
+"Item";"Qty";"Refdes";"Description";"Value";"MANUFACTURER_PART_NUMBER";"MANUFACTURER_NAME";
